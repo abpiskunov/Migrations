@@ -1,0 +1,32 @@
+﻿{
+  // TODO : figure out where to put migrations.json file, can there be the case when we have several migration configs? For production root is fine, for tooling lets see...
+  "target": {
+    "path": "../NewMvc.csproj",
+    "projectGuid": "{xxxx-xxxx}"
+  },
+  "lock": false, // for tool to leave alone all routes or whole file, depends how we store "migrate to" project info.
+  "routes": {
+    "/home/privacy": {
+      "mapTo": null, // if we need to remap this to some new route under migrated project (in case users want to refactor something in routes along with migration)
+      "match": "default", // default|startswith|endswith|regex
+      "lock": true // for tool to leave alone this particular route
+    },
+    "/home/about": {
+      "mapTo": "/home/privacy",
+      "redirect": true // redirect=false means rewrite
+    },
+    "/css": {
+      "static": true
+    },
+    "/lib": {
+      "static": true
+    },
+    "/js": {
+      "static": true
+    },
+    "/NewMvc.styles.css": {
+      "static": true
+    }
+  }
+}
+
