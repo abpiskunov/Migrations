@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.AspNet.Migrations</id>
+    <version>$PackageVersion$</version>
+    <title>Library to help migrate Asp.Net projects to Asp.Net Core.</title>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft,aspnet</owners>
+    <licenseUrl>https://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Library to help migrate Asp.Net projects to Asp.Net Core.</description>
+    <copyright>&#169; Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft AspNet Core MIgrations</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Migrations" version="$PackageVersion$" />
+    </dependencies>
+  </metadata>
+</package>

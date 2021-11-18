@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'build\targets\Settings.targets'))\build\targets\Settings.targets" />
+
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="SetNuSpecProperties" BeforeTargets="NuGetPack">
+    <PropertyGroup>
+      <TargetFramework>net46</TargetFramework>
+      <NuSpecFile>$(MSBuildProjectName).nuspec</NuSpecFile>
+      <NuSpecProperties>$(NuSpecProperties);PackageVersion=$(PackageVersion)</NuSpecProperties>
+    </PropertyGroup>
+  </Target>
+
+  <PropertyGroup>
+    <NuGetContentDestination>lib\$(TargetFramework)</NuGetContentDestination>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <NuGetContent Include="..\src\bin\$(Configuration)\$(TargetFramework)\Microsoft.AspNet.Migrations.dll"/>
+  </ItemGroup>
+
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), 'build\targets\NuGetProj.targets'))\build\targets\NuGetProj.targets" />
+</Project>

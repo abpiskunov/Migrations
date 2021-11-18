@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31814.306
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNet.Migrations", "AspNet.Migrations\src\Microsoft.AspNet.Migrations.csproj", "{B5D66012-4DE3-4458-83DC-EC792805A998}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspNetCore.Migrations", "AspNetCore.Migrations\src\Microsoft.AspNetCore.Migrations.csproj", "{27624403-C19F-4BCF-9FD6-766BA4A151F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5D66012-4DE3-4458-83DC-EC792805A998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D66012-4DE3-4458-83DC-EC792805A998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D66012-4DE3-4458-83DC-EC792805A998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D66012-4DE3-4458-83DC-EC792805A998}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27624403-C19F-4BCF-9FD6-766BA4A151F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27624403-C19F-4BCF-9FD6-766BA4A151F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27624403-C19F-4BCF-9FD6-766BA4A151F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27624403-C19F-4BCF-9FD6-766BA4A151F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91556A3B-AFEC-48A8-B78E-B4FC499C2922}
+	EndGlobalSection
+EndGlobal
