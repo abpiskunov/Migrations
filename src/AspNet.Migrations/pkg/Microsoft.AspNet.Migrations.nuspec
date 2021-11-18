@@ -11,8 +11,5 @@
     <description>Library to help migrate Asp.Net projects to Asp.Net Core.</description>
     <copyright>&#169; Microsoft Corporation. All rights reserved.</copyright>
     <tags>Microsoft AspNet Core MIgrations</tags>
-    <dependencies>
-      <dependency id="Microsoft.AspNet.Migrations" version="$PackageVersion$" />
-    </dependencies>
   </metadata>
 </package>
